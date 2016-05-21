@@ -14,14 +14,7 @@ namespace CarEngine
         }
         public IgnitionStatus Start()
         {
-            if (_battery.IsCharged)
-            {
-                return(_starter.Start());
-            }
-            else
-            {
-                return IgnitionStatus.Failure;
-            }
+            return (_starter.Start(_battery));
         }
     }
 }

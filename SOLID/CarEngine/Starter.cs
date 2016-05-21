@@ -5,10 +5,9 @@
         public string Brand { get; set; }
         public string Model { get; set; }
 
-        public IgnitionStatus Start()
+        public IgnitionStatus Start(Battery battery)
         {
-            //Logic to start the engine
-            return IgnitionStatus.Success;
+            return (battery.IsCharged ? IgnitionStatus.Success : IgnitionStatus.Failure);
         }
     }
 }
