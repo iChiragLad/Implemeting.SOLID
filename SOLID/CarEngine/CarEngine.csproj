@@ -50,7 +50,10 @@
     <Compile Include="CarProgram.cs" />
     <Compile Include="HydraulicPump.cs" />
     <Compile Include="HydraulicStarter.cs" />
+    <Compile Include="IElectricStarter.cs" />
     <Compile Include="IgnitionStatus.cs" />
+    <Compile Include="IHydraulicStarter.cs" />
+    <Compile Include="IPneumaticStarter.cs" />
     <Compile Include="IStarter.cs" />
     <Compile Include="PneumaticStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
