@@ -1,17 +1,18 @@
-﻿namespace CarEngine
+﻿using System;
+
+namespace CarEngine
 {
     internal class Engine
     {
         private readonly IStarter _starter;
-        private readonly Battery _battery;
 
         public Engine()
         {
-            _starter = new ElectricStarter();
-            _battery = new Battery();
+            _starter = new ElectricStarter {Battery = new Battery()};
         }
         public IgnitionStatus Start()
         {
+            Console.WriteLine("Battery : " + _starter.Battery.IsCharged);
             return (_starter.Start());
         }
     }
