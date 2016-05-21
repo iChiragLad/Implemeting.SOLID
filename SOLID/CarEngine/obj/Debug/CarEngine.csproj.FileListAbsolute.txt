@@ -1,0 +1,6 @@
+D:\Do not touch\C# practice\CSharp_Practice\SOLID practice\SOLID\CarEngine\bin\Debug\CarEngine.exe.config
+D:\Do not touch\C# practice\CSharp_Practice\SOLID practice\SOLID\CarEngine\bin\Debug\CarEngine.exe
+D:\Do not touch\C# practice\CSharp_Practice\SOLID practice\SOLID\CarEngine\bin\Debug\CarEngine.pdb
+D:\Do not touch\C# practice\CSharp_Practice\SOLID practice\SOLID\CarEngine\obj\Debug\CarEngine.csprojResolveAssemblyReference.cache
+D:\Do not touch\C# practice\CSharp_Practice\SOLID practice\SOLID\CarEngine\obj\Debug\CarEngine.exe
+D:\Do not touch\C# practice\CSharp_Practice\SOLID practice\SOLID\CarEngine\obj\Debug\CarEngine.pdb
