@@ -1,12 +1,28 @@
-﻿namespace CarEngine
+﻿using System;
+
+namespace CarEngine
 {
     internal class HydraulicStarter : IStarter
     {
         public string Brand { get; set; }
         public string Model { get; set; }
+
+        public Battery Battery
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public AirCompressor AirCompressor
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+        public HydraulicPump HydraulicPump { get; set; }
+
         public IgnitionStatus Start()
         {
-            return IgnitionStatus.Success;
+            return (HydraulicPump.IsFilled ? IgnitionStatus.Success : IgnitionStatus.Failure);
         }
     }
 }

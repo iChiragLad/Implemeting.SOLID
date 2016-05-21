@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AirCompressor.cs" />
     <Compile Include="Battery.cs" />
     <Compile Include="ElectricStarter.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="CarProgram.cs" />
+    <Compile Include="HydraulicPump.cs" />
     <Compile Include="HydraulicStarter.cs" />
     <Compile Include="IgnitionStatus.cs" />
     <Compile Include="IStarter.cs" />
