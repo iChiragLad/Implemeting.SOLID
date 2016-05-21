@@ -2,24 +2,17 @@
 {
     internal class Starter
     {
+        private IStarter _starter;
         public string Brand { get; set; }
         public string Model { get; set; }
 
-        public StarterType StarterType { get; set; }
+        public Starter()
+        {
+            _starter = new ElectricStarter();
+        }
         public IgnitionStatus Start(Battery battery)
         {
-            if (StarterType == StarterType.Electric)
-            {
-                return battery.IsCharged ? IgnitionStatus.Success : IgnitionStatus.Failure;
-            }
-            if(StarterType == StarterType.Hydraulic)
-            {
-                return  IgnitionStatus.Success;
-            }
-            else
-            {
-                return IgnitionStatus.Success;
-            }
+            return _starter.Start();
         }
     }
 }

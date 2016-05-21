@@ -15,8 +15,6 @@ namespace CarEngine
             var state = engine.Start();
 
             Console.WriteLine(state == IgnitionStatus.Success ? "Engine Started" : "Failed to start");
-
-            Console.ReadKey();
         }
     }
 }

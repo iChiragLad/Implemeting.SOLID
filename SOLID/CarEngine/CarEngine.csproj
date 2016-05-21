@@ -44,12 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Battery.cs" />
+    <Compile Include="ElectricStarter.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="CarProgram.cs" />
+    <Compile Include="HydraulicStarter.cs" />
     <Compile Include="IgnitionStatus.cs" />
+    <Compile Include="IStarter.cs" />
+    <Compile Include="PneumaticStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Starter.cs" />
-    <Compile Include="StarterType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
